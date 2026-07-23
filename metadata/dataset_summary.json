@@ -1,0 +1,119 @@
+{
+  "dataset_title": "医学影像多模态模型评测集（精选示例版）",
+  "dataset_slug": "medical-imaging-model-evaluation-benchmark",
+  "source_date": "2026-07-22",
+  "sample_policy": "每个影像评测子集最多抽取50题；不足50题的子集完整保留；抽样按子分类分层，保证多模态任务覆盖。",
+  "total_subsets": 5,
+  "total_records": 213,
+  "total_image_files": 455,
+  "total_files": 460,
+  "total_bytes": 385896069,
+  "subsets": [
+    {
+      "id": "2",
+      "slug": "01-image-classification",
+      "name": "图像分类",
+      "task": "多模态影像分类",
+      "priority": "P1",
+      "source_workbook": "sp-2(276)、10(13)-20260722/sp-2(276)-20260722/DS2-276(0080^0355)-20260722.xlsx",
+      "source_record_count": 276,
+      "sample_count": 50,
+      "sample_policy": "最多50题；按子分类比例分层抽样",
+      "categories": {
+        "X光检查": 38,
+        "核磁共振检查": 1,
+        "CT检查": 10,
+        "超声检查": 1
+      },
+      "image_file_count": 93,
+      "data_file": "data/sets/01-image-classification/dataset.xlsx"
+    },
+    {
+      "id": "3",
+      "slug": "02-report-generation",
+      "name": "报告生成（多模态摘要）",
+      "task": "影像报告生成",
+      "priority": "P3",
+      "source_workbook": "sp-3(282)-20260722/DS3-282(0108^0389)-20260722.xlsx",
+      "source_record_count": 282,
+      "sample_count": 50,
+      "sample_policy": "最多50题；按子分类比例分层抽样",
+      "categories": {
+        "CT检查": 8,
+        "X光检查": 41,
+        "核磁共振检查": 1
+      },
+      "image_file_count": 106,
+      "data_file": "data/sets/02-report-generation/dataset.xlsx"
+    },
+    {
+      "id": "5",
+      "slug": "03-differential-diagnosis",
+      "name": "多模态输入的鉴别诊断",
+      "task": "鉴别诊断",
+      "priority": "P2",
+      "source_workbook": "sp-5(193)-20260722/DS5-193(0084^0276)-20260722.xlsx",
+      "source_record_count": 193,
+      "sample_count": 50,
+      "sample_policy": "最多50题；按子分类比例分层抽样",
+      "categories": {
+        "X光检查": 38,
+        "核磁共振检查": 1,
+        "CT检查": 10,
+        "超声检查": 1
+      },
+      "image_file_count": 101,
+      "data_file": "data/sets/03-differential-diagnosis/dataset.xlsx"
+    },
+    {
+      "id": "6",
+      "slug": "04-treatment-planning",
+      "name": "多模态输入的治疗方案",
+      "task": "治疗方案生成",
+      "priority": "P2",
+      "source_workbook": "sp-6(237)-20260722/DS6-237(0075^0311)-20260722.xlsx",
+      "source_record_count": 237,
+      "sample_count": 50,
+      "sample_policy": "最多50题；按子分类比例分层抽样",
+      "categories": {
+        "X光检查": 41,
+        "核磁共振检查": 1,
+        "CT检查": 7,
+        "超声检查": 1
+      },
+      "image_file_count": 142,
+      "data_file": "data/sets/04-treatment-planning/dataset.xlsx"
+    },
+    {
+      "id": "10",
+      "slug": "05-image-quality-control",
+      "name": "多模态报告质控",
+      "task": "影像质量控制",
+      "priority": "P3",
+      "source_workbook": "sp-2(276)、10(13)-20260722/sp-10(13)-20260722/DS10-13(0052^0064)-20260722.xlsx",
+      "source_record_count": 13,
+      "sample_count": 13,
+      "sample_policy": "最多50题；按子分类比例分层抽样",
+      "categories": {
+        "有问题": 8,
+        "无问题": 5
+      },
+      "image_file_count": 13,
+      "data_file": "data/sets/05-image-quality-control/dataset.xlsx"
+    }
+  ],
+  "data_scope": [
+    "X光检查",
+    "CT检查",
+    "核磁共振检查",
+    "超声检查"
+  ],
+  "intended_use": [
+    "医学多模态模型评测",
+    "影像理解与文本生成",
+    "医学视觉问答",
+    "影像质量控制",
+    "研究与教学示例"
+  ],
+  "compliance_note": "本数据集仅供科研、教学和模型评测参考，不构成临床诊疗建议；使用者应遵守适用的医疗数据、个人信息保护和模型安全相关法律法规。"
+}
